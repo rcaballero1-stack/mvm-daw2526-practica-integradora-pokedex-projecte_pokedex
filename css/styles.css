@@ -1,0 +1,86 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f0f2f5; 
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 3px solid black;
+}
+
+.nav-links li { display: inline; margin-right: 20px; }
+.nav-links a { text-decoration: none; color: black; font-weight: bold; }
+
+.hero {
+    background-color: #ff1f1f;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pokemon-card {
+    background: white;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px; /* Un poco de redondeado queda mejor */
+}
+
+.pokemon-card img { width: 100px; }
+
+/* --- MODIFICADO: Estilo de los tipos debajo del nombre --- */
+.card-types {
+    margin-top: 10px;
+}
+
+.type { 
+    display: inline-block; 
+    padding: 4px 8px; 
+    color: white; 
+    border-radius: 5px; 
+    margin: 2px; 
+    font-size: 11px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid;
+    
+}
+
+/* Colores de tipos */
+.grass { background-color: green; }
+.fire { background-color: orange; }
+.water { background-color: skyblue; }
+.poison { background-color: purple; }
+.bug { background-color: lightgreen }
+.flying { background-color: #A890F0; }
+.normal { background-color: #A8A878; color: black; }
+.electric { background-color: #F8D030; color: black; }
+.ground {color: black;}
+.fairy {color: black;}
+.fighting {color: black;}
+.psychic {color: black;}
+.rock {color: black;}
+.ice {color: black;}
+.dragon {color: black;}
+
+
+/* --- Batalla (Se mantiene igual) --- */
+.stats-box { background: white; border: 2px solid black; padding: 10px; position: absolute; width: 150px; }
+.enemy { top: 20px; left: 20px; }
+.player { bottom: 100px; right: 20px; }
+.hp-bar { background: gray; width: 100%; height: 10px; }
+.hp-fill { background: lime; height: 100%; width: 100%; }
+
+.battle-controls { background: #333; color: white; padding: 20px; position: fixed; bottom: 0; width: 100%; }
+

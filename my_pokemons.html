@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PokéDex - Mis Pokémon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="my_pokemons.html" class="active">Mis Pokémon</a></li>
+                <li><a href="hunt.html">Caza</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Mi coleccion</h2>
+            <p>Pokemon capturados: <span id="pkmCount">0</span></p>
+            
+
+        </section>
+
+        <section class="main-content">
+            <div class="pokemon-grid" id="capturedGrid">
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/pages/my_pokemons.js"></script>
+</body>
+</html>

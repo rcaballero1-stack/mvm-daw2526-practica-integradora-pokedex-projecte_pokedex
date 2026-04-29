@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PokéDex - Caza</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hunt-container {
+            width: 100%;
+            height: 80vh;
+            background: url('img/hunt_bg.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="my_pokemons.html">Mis Pokémon</a></li>
+                <li><a href="hunt.html" class="active">Caza</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hunt-container">
+            <div id="wildPokemonArea">
+                <div class="bubble">¡Busca Pokémon salvajes!</div>
+            </div>
+            <button id="huntButton" class="btn-main" style="position: absolute; bottom: 20px;">Explorar Hierba</button>
+        </div>
+    </main>
+
+    <script type="module" src="js/pages/hunt.js"></script>
+</body>
+</html>

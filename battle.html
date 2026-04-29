@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PokéDex - Batalla</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .battle-scene {
+            width: 100%;
+            height: 70vh;
+            background: url('img/battle_bg.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="battle-scene">
+        <div id="enemyStats" class="stats-box enemy">
+            <h2 id="enemyName">???</h2>
+            <div class="hp-bar"><div id="enemyHpFill" class="hp-fill"></div></div>
+        </div>
+        <img id="enemyImg" class="pkm-battle enemy-pkm" src="" alt="">
+
+        <div id="playerStats" class="stats-box player">
+            <h2 id="playerName">???</h2>
+            <div class="hp-bar"><div id="playerHpFill" class="hp-fill"></div></div>
+        </div>
+        <img id="playerImg" class="pkm-battle player-pkm" src="" alt="">
+    </div>
+
+    <div class="battle-controls">
+        <div id="battleLog" class="log-box">¡Comienza el duelo!</div>
+        <div class="actions">
+            <button id="attackBtn">Atacar</button>
+            <button id="runBtn">Huir</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/pages/battle.js"></script>
+</body>
+</html>
